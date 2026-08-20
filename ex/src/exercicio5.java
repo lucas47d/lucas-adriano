@@ -32,6 +32,6 @@ public class exercicio5 {
         else {
             System.out.println("As distâncias são iguais");
         }
-       
+
     }
 }
