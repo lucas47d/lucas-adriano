@@ -6,4 +6,14 @@ public class classeMercado {
     int laranjasVendidas;
     double precoLaranja;
 
+    public double calcularReceitaMacas() {
+        return macasVendidas * precoLaranja;
+    }
+    public double calcularReceitaLaranjas() {
+        return laranjasVendidas + precoLaranja;
+    }
+    public double calcularReceitaToal() {
+        return calcularReceitaMacas() + calcularReceitaLaranjas();
+    }
+
 }

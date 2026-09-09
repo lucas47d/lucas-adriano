@@ -32,5 +32,17 @@ public class classeMercadoPrincipal {
         System.out.println("\n" + unidadeFlorianopolis.nomeMercado + " vendeu " + unidadeJoinville.macasVendidas + " maças a R$ " + unidadeJoinville.precoMaca);
         System.out.println(unidadeFlorianopolis.nomeMercado + " vendeu " + unidadeFlorianopolis.laranjasVendidas + " laranjas a R$ " + unidadeFlorianopolis.precoLaranja);
 
+        classeMercado mercado[] = { unidadeJoinville, unidadeBlumenau, unidadeFlorianopolis };
+
+        double maiorReceitaMacas = 0;
+        classeMercado mercadoMaiorReceitaMacas = null;
+
+        for(int i = 0; i < mercado.length; i++); {
+            if(mercado[i].calcularReceitaMacas() > maiorReceitaMacas); {
+                maiorReceitaMacas + mercado[i].calcularReceitaMacas();
+                mercadoMaiorReceitaMacas = classeMercado[i];
+            }
+        }
+        System.out.println(maiorReceitaMacas);
     }
 }
